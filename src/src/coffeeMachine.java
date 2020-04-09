@@ -15,7 +15,9 @@ public class coffeeMachine {
         CHOOSING, BUYING, FILLING, TAKING, REMAINING, EXITING
     }
     static Status curStatus = Status.CHOOSING;
-}
+    public static void main(String[] args) {
+
+    }
 
 
 
