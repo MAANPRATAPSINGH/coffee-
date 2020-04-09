@@ -121,7 +121,18 @@ public class coffeeMachine {
                 money = 0;
                 curStatus = Status.CHOOSING;
             }
+            static void remaining() {
+                System.out.println();
+                System.out.println("The coffee machine has:");
+                System.out.println(WATER + " of water");
+                System.out.println(MILK + " of milk");
+                System.out.println(BEANS + " of coffee beans");
+                System.out.println(CUPS + " of disposable cups");
+                System.out.println(money + " of money");
+                System.out.println();
 
+                curStatus = Status.CHOOSING;
+            }
         }
 
 
