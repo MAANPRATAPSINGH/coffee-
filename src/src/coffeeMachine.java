@@ -112,7 +112,11 @@ public class coffeeMachine {
                 MILK += milkAdd;
                 BEANS += beansAdd;
                 CUPS += cupsAdd;
+
+                curStatus = Status.CHOOSING;
             }
+
+        }
 
 
 
