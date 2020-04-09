@@ -14,7 +14,7 @@ public class coffeeMachine {
     enum Status {
         CHOOSING, BUYING, FILLING, TAKING, REMAINING, EXITING
     }
-
+    static Status curStatus = Status.CHOOSING;
 }
 
 
