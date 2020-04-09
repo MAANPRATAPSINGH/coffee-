@@ -91,6 +91,8 @@ public class coffeeMachine {
                 default: {
                     break;
                 }
+                curStatus = Status.CHOOSING;
+            }
 
             }
 
