@@ -115,6 +115,12 @@ public class coffeeMachine {
 
                 curStatus = Status.CHOOSING;
             }
+            static void take() {
+                //System.out.println("take() called");
+                System.out.println("I gave you $" + money +"\n");
+                money = 0;
+                curStatus = Status.CHOOSING;
+            }
 
         }
 
