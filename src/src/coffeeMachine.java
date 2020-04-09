@@ -48,7 +48,7 @@ public class coffeeMachine {
                     break;
             }
         } while (curStatus != Status.EXITING);
-        static void buy() {
+        static void buy () {
             //System.out.println("buy() called");
             System.out.println();
             System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: ");
@@ -93,8 +93,27 @@ public class coffeeMachine {
                 }
                 curStatus = Status.CHOOSING;
             }
-
+            static void fill () {
+                //System.out.println("fill() called");
+                System.out.println();
+                System.out.print("Write how many ml of water do you want to add: ");
+                int waterAdd = scanner.nextInt();
+                System.out.println();
+                System.out.print("Write how many ml of milk do you want to add: ");
+                int milkAdd = scanner.nextInt();
+                System.out.println();
+                System.out.print("Write how many grams of coffee beans do you want to add: ");
+                int beansAdd = scanner.nextInt();
+                System.out.println();
+                System.out.print("Write how many disposable cups of coffee do you want to add: ");
+                int cupsAdd = scanner.nextInt();
+                System.out.println();
+                WATER += waterAdd;
+                MILK += milkAdd;
+                BEANS += beansAdd;
+                CUPS += cupsAdd;
             }
+
 
 
 
