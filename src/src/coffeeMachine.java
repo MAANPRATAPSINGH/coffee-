@@ -133,6 +133,10 @@ public class coffeeMachine {
 
                 curStatus = Status.CHOOSING;
             }
+            static void exit() {
+                //System.out.println("exit() called");
+                curStatus = Status.EXITING;
+            }
         }
 
 
