@@ -48,7 +48,51 @@ public class coffeeMachine {
                     break;
             }
         } while (curStatus != Status.EXITING);
-    }
+        static void buy() {
+            //System.out.println("buy() called");
+            System.out.println();
+            System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: ");
+            String choice = scanner.next();
+            switch (choice) {
+                case "1": {
+                    if (canMakeCoffee(250, 0, 16)) {
+                        WATER -= 250;
+                        BEANS -= 16;
+                        CUPS--;
+                        money += 4;
+                        break;
+                    }
+                }
+                case "2": {
+                    if (canMakeCoffee(350, 75, 20)) {
+                        WATER -= 350;
+                        MILK -= 75;
+                        BEANS -= 20;
+                        CUPS--;
+                        money += 7;
+                        break;
+                    }
+                }
+                case "3": {
+                    if (canMakeCoffee(200, 100, 12)) {
+                        WATER -= 200;
+                        MILK -= 100;
+                        BEANS -= 12;
+                        CUPS--;
+                        money += 6;
+                        break;
+
+                    }
+
+                }
+                case "back": {
+                    break;
+                }
+                default: {
+                    break;
+                }
+
+            }
 
 
 
